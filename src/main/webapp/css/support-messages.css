@@ -1,0 +1,105 @@
+/* General styles for lighter purple theme */
+body {
+    background-color: #f4f0fa; /* Light lavender background */
+    color: #4a316f; /* Deep purple text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0d3f1; /* Subtle border matching purple theme */
+}
+
+h1 {
+    text-align: center;
+    color: #764ba2; /* Vibrant purple */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Success and Error Messages */
+.success-message {
+    background-color: #e8f5e9; /* Light green for success */
+    color: #2e7d32; /* Dark green */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c8e6c9; /* Light green border */
+}
+
+.error-message {
+    background-color: #ffebee; /* Light red for error */
+    color: #c62828; /* Dark red */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #ffcdd2; /* Light red border */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fafafa; /* Light gray */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+thead {
+    background-color: #e0d3f1; /* Light purple for table header */
+}
+
+thead th {
+    color: #4a316f; /* Deep purple text */
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody td {
+    color: #5f4576; /* Slightly muted purple text */
+    padding: 12px 15px;
+}
+
+tbody tr:hover {
+    background-color: #f0e6fa; /* Highlight row with light purple */
+    transition: background-color 0.3s ease;
+}
+
+/* No messages found text */
+.container p {
+    color: #7e6b91; /* Soft purple for paragraph text */
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}

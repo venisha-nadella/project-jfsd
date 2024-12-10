@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3edf7; /* Light background for a clean purple theme */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #764ba2;
+    opacity: 0;
+    transform: translateY(-20px);
+    margin-bottom: 20px;
+}
+
+/* Success and Error Messages */
+.success-message,
+.error-message {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #e8dffa;
+    color: #4a0f87;
+    border: 1px solid #d1b7ee;
+}
+
+.error-message {
+    background-color: #fce4ec;
+    color: #ab233f;
+    border: 1px solid #f6c3d4;
+}
+
+/* Back Button */
+.btn-back {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #764ba2;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.btn-back:hover {
+    background-color: #5d3a88;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tabs button {
+    background-color: #dcd1e3;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs button.active {
+    background-color: #764ba2;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabs button:hover {
+    background-color: #5d3a88;
+    color: #fff;
+}
+
+/* Sections */
+.section {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #764ba2;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 15px;
+}
+
+.section video {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn-upload,
+.btn-delete,
+.btn-download,
+.btn-edit,
+.submit-grade-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-upload {
+    background-color: #764ba2;
+}
+
+.btn-upload:hover {
+    background-color: #5d3a88;
+}
+
+.btn-delete {
+    background-color: #d9534f;
+}
+
+.btn-delete:hover {
+    background-color: #c12e2a;
+}
+
+.btn-download {
+    background-color: #5e60ce;
+}
+
+.btn-download:hover {
+    background-color: #4b47b3;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-edit:hover {
+    background-color: #ffb300;
+}
+
+.submit-grade-btn {
+    background-color: #764ba2;
+}
+
+.submit-grade-btn:hover {
+    background-color: #5d3a88;
+}
+
+/* Empty States */
+.section p {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Submission Items */
+.submission-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submission-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #764ba2;
+}
+
+.submission-info {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Form Inline Styles for Assignments */
+.edit-form,
+.grade-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-form label {
+    font-weight: normal;
+}
+
+.grade-form input[type="number"] {
+    width: 80px;
+}

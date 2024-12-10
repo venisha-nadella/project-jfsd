@@ -1,0 +1,214 @@
+/* General Body and Layout Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f6fc; /* Light lavender background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #764ba2; /* Vibrant purple */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Success and Error Messages */
+.success-message,
+.error-message {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #5a8e3e; /* Muted green for success */
+    color: white;
+}
+
+.error-message {
+    background-color: #a72c47; /* Muted red for error */
+    color: white;
+}
+
+/* Section Navigation */
+.section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.section-nav button {
+    background-color: #764ba2; /* Vibrant purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.section-nav button:hover {
+    background-color: #5f4576; /* Muted purple */
+}
+
+.section-nav button.active {
+    background-color: #5f4576; /* Muted purple */
+}
+
+.section-nav button:focus {
+    outline: none;
+}
+
+/* Section Styles */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4a316f; /* Deep purple */
+    margin-bottom: 20px;
+}
+
+/* Video Session Section */
+#video-sessions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#video-sessions li {
+    margin-bottom: 20px;
+}
+
+#video-sessions video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Assignments Section */
+#assignments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#assignments li {
+    margin-bottom: 20px;
+}
+
+.download-button {
+    background-color: #764ba2; /* Vibrant purple */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #5f4576; /* Muted purple */
+}
+
+form input[type="file"] {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #5a8e3e; /* Muted green */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #4a7531; /* Slightly darker green */
+}
+
+/* Grades Section */
+#grades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#grades li {
+    margin-bottom: 20px;
+}
+
+#grades p {
+    font-size: 1rem;
+    color: #7e6b91; /* Muted lavender */
+}
+
+/* De-enroll Button */
+.de-enroll-button {
+    background-color: #a72c47; /* Muted red */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.de-enroll-button:hover {
+    background-color: #832938; /* Darker red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .section-nav button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #video-sessions video {
+        max-width: 100%;
+    }
+
+    .de-enroll-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}

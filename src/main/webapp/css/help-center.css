@@ -1,0 +1,159 @@
+/* help-center.css */
+
+/* General styles for purple theme */
+body {
+    background-color: #f4f0fa; /* Light lavender background */
+    color: #4a316f; /* Deep purple text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #764ba2; /* Vibrant purple */
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #7e6b91; /* Softer purple */
+    font-size: 1.1rem;
+}
+
+/* Section styles */
+section h2 {
+    color: #4e3c82; /* Deeper purple for headings */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #5f4576; /* Muted purple for paragraphs */
+    line-height: 1.6;
+}
+
+/* Accordion styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background-color: #e8e2f4; /* Light purple background */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6c9eb; /* Medium purple for header */
+    color: #4a316f; /* Deep purple */
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #c7b3e3; /* Slightly darker purple */
+}
+
+.accordion-header .icon {
+    transition: transform 0.3s;
+}
+
+.accordion-header .icon.rotate {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f4f0fa; /* Lighter purple */
+    color: #4a316f;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+/* Sub-section styles */
+.sub-section h3 {
+    color: #5f4576; /* Muted purple */
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.sub-section p {
+    color: #7e6b91; /* Softer lavender for paragraphs */
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+.contact-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #d6c9eb; /* Medium purple background */
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    color: #764ba2; /* Vibrant purple */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #4a316f; /* Deep purple */
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-section .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #764ba2; /* Vibrant purple button */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-section .btn:hover {
+    background-color: #5f4576; /* Muted purple on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+}

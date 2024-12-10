@@ -1,0 +1,133 @@
+/* Dark Theme Styles for Admin Profile Page */
+body {
+    background-color: white;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust based on navbar height */
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #764ba2;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.profile-header {
+    margin-bottom: 25px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #444;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    color: #ffffff;
+    margin: 10px 0 5px;
+    font-size: 1.8rem;
+}
+
+.profile-role {
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.edit-profile-btn {
+    background-color: white;
+    color: #764ba2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.edit-profile-btn:hover {
+    background-color: #3a3a3a;
+}
+
+.profile-info {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile-info h3 {
+    color: #764ba2;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    color: #764ba2;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Scrollbar Styling for Dark Theme */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .profile-card {
+        margin: 0 15px;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Focus and Active States */
+.edit-profile-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.edit-profile-btn:active {
+    transform: scale(0.95);
+    background-color: #353535;
+}
